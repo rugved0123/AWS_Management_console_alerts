@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, date
+rom datetime import datetime, timedelta, date
 from boto3 import client
 import gzip
 import json
@@ -20,7 +20,7 @@ s3_client = boto3.client('s3',
 bucket = bucket_name
 
 def downloadeventfiles3():
-    BUCKET_NAME = 'cloudtraileventid' # replace with your bucket name where the event id will be stored to prevent duplication
+    BUCKET_NAME = bucket_name # replace with your bucket name where the event id will be stored to prevent duplication
     KEY = 'event.json' # replace with your object key
 
     s3 = boto3.resource('s3',aws_access_key_id=aws_access_key_id_value,
