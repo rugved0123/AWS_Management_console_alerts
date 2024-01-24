@@ -1,4 +1,4 @@
-rom datetime import datetime, timedelta, date
+from datetime import datetime, timedelta, date
 from boto3 import client
 import gzip
 import json
